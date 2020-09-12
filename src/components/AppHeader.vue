@@ -30,6 +30,13 @@
       >
         <FaIcon class="fa-lg" :icon="['fab', 'twitter-square']" />
       </a>
+      <a
+        class="icon is-medium has-text-white"
+        href="mailto:uvze0c7r7@relay.firefox.com?subject=Hi Paul&body=Hi Paul,%0D%0A%0D%0AI was just looking at your profile on GitHub"
+        target="_blank"
+      >
+        <FaIcon class="fa-lg" :icon="['far', 'paper-plane']" />
+      </a>
     </div>
   </div>
 </template>

@@ -16,6 +16,8 @@ import {
   faTwitterSquare
 } from '@fortawesome/free-brands-svg-icons'
 
+import { faPaperPlane } from '@fortawesome/free-regular-svg-icons'
+
 library.add(
   faFontAwesome,
   faVuejs,
@@ -29,7 +31,8 @@ library.add(
   faCss3Alt,
   faLinkedin,
   faSass,
-  faTwitterSquare
+  faTwitterSquare,
+  faPaperPlane
 )
 
 export default library
