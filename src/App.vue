@@ -1,8 +1,8 @@
 <template>
-  <div id="content">
-    <AppHeader />
-    <div id="main" />
-    <Footer id="footer" />
+  <div id="main" class="tile is-ancestor">
+    <AppHeader class="pt-5 pl-5 tile is-9" />
+    <div id="body" class="tile is-12" />
+    <Footer id="footer" class="px-5 tile is-12" />
   </div>
 </template>
 

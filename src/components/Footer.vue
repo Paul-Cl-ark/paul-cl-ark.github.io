@@ -1,5 +1,5 @@
 <template>
-  <footer class="px-5 py-5 level has-text-white">
+  <footer class="level has-text-white">
     <div class="level-left">
       <div class="level-item">
         <span class="icon is-large">

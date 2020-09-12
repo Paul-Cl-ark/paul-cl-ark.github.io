@@ -1,6 +1,6 @@
 <template>
-  <div class="pt-5 pl-5 columns is-multiline">
-    <div class="column is-12">
+  <div class="tile is-parent is-vertical">
+    <div class="tile is-child">
       <figure class="image is-128x128">
         <img
           class="is-rounded"
@@ -8,7 +8,7 @@
         />
       </figure>
     </div>
-    <div class="column is-narrow">
+    <div class="tile is-child">
       <a
         class="icon is-medium has-text-white"
         href="https://www.linkedin.com/in/paul-clark-javascript-dev/"
