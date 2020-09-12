@@ -3,13 +3,20 @@ module.exports = {
   env: {
     node: true
   },
-  extends: ['plugin:vue/vue3-recommended', '@vue/prettier'],
+  extends: [
+    'plugin:vue/vue3-recommended',
+    'eslint:recommended',
+    '@vue/prettier',
+    'plugin:prettier/recommended'
+  ],
   parserOptions: {
     parser: 'babel-eslint'
   },
+  plugins: ['prettier'],
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'vue/component-name-in-template-casing': ['error', 'PascalCase']
   },
   overrides: [
     {
