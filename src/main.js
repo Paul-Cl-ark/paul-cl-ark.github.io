@@ -4,4 +4,13 @@ import './registerServiceWorker'
 
 require('@/assets/main.sass')
 
-createApp(App).mount('#app')
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+library.add(faUserSecret)
+
+const app = createApp(App)
+
+app.component('FaIcon', FontAwesomeIcon)
+
+app.mount('#app')
