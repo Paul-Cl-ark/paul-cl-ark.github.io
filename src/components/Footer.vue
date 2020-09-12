@@ -44,18 +44,24 @@
     </div>
     <div class="level-right">
       <div class="level-item">
-        <span class="icon is-large">
+        <a
+          href="https://fontawesome.com/"
+          target="_blank"
+          class="icon is-large has-text-white"
+        >
           <FaIcon class="fa-3x" :icon="['fab', 'font-awesome']" />
-        </span>
+        </a>
       </div>
       <div class="level-item">
         <figure class="is-3by1">
-          <img
-            src="../assets/made-with-bulma-dark.png"
-            width="225"
-            height="75"
-            alt="Made with Bulma"
-          />
+          <a href="https://bulma.io/">
+            <img
+              src="../assets/made-with-bulma-dark.png"
+              width="225"
+              height="75"
+              alt="Made with Bulma"
+            />
+          </a>
         </figure>
       </div>
     </div>
