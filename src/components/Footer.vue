@@ -3,12 +3,42 @@
     <div class="level-left">
       <div class="level-item">
         <span class="icon is-large">
+          <FaIcon class="fa-3x" :icon="['fab', 'js-square']" />
+        </span>
+      </div>
+      <div class="level-item">
+        <span class="icon is-large">
           <FaIcon class="fa-3x" :icon="['fab', 'vuejs']" />
         </span>
       </div>
       <div class="level-item">
         <span class="icon is-large">
           <FaIcon class="fa-3x" :icon="['fab', 'react']" />
+        </span>
+      </div>
+      <div class="px-2 level-item">
+        <span class="icon is-large">
+          <FaIcon class="fa-3x" :icon="['fab', 'node']" />
+        </span>
+      </div>
+      <div class="level-item">
+        <span class="icon is-large">
+          <FaIcon class="fa-2x" :icon="['fab', 'html5']" />
+        </span>
+      </div>
+      <div class="level-item">
+        <span class="icon is-large">
+          <FaIcon class="fa-2x" :icon="['fab', 'css3-alt']" />
+        </span>
+      </div>
+      <div class="level-item">
+        <span class="icon is-large">
+          <FaIcon class="fa-2x" :icon="['fab', 'sass']" />
+        </span>
+      </div>
+      <div class="level-item">
+        <span class="icon is-large">
+          <FaIcon class="fa-2x" :icon="['fab', 'aws']" />
         </span>
       </div>
     </div>
