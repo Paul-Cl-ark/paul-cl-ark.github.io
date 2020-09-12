@@ -38,6 +38,11 @@
       </div>
       <div class="level-item">
         <span class="icon is-large">
+          <FaIcon class="fa-2x" :icon="['fab', 'git']" />
+        </span>
+      </div>
+      <div class="level-item">
+        <span class="icon is-large">
           <FaIcon class="fa-2x" :icon="['fab', 'aws']" />
         </span>
       </div>
