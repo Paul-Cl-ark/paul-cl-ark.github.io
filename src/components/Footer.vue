@@ -1,49 +1,12 @@
 <template>
   <footer class="level has-text-white">
     <div class="level-left">
-      <div class="level-item">
+      <div v-for="skill in skills" :key="skill.key" class="level-item">
         <span class="icon is-large">
-          <FaIcon class="fa-3x" :icon="['fab', 'js-square']" />
-        </span>
-      </div>
-      <div class="level-item">
-        <span class="icon is-large">
-          <FaIcon class="fa-3x" :icon="['fab', 'vuejs']" />
-        </span>
-      </div>
-      <div class="level-item">
-        <span class="icon is-large">
-          <FaIcon class="fa-3x" :icon="['fab', 'react']" />
-        </span>
-      </div>
-      <div class="px-2 level-item">
-        <span class="icon is-large">
-          <FaIcon class="fa-3x" :icon="['fab', 'node']" />
-        </span>
-      </div>
-      <div class="level-item">
-        <span class="icon is-large">
-          <FaIcon class="fa-2x" :icon="['fab', 'html5']" />
-        </span>
-      </div>
-      <div class="level-item">
-        <span class="icon is-large">
-          <FaIcon class="fa-2x" :icon="['fab', 'css3-alt']" />
-        </span>
-      </div>
-      <div class="level-item">
-        <span class="icon is-large">
-          <FaIcon class="fa-2x" :icon="['fab', 'sass']" />
-        </span>
-      </div>
-      <div class="level-item">
-        <span class="icon is-large">
-          <FaIcon class="fa-2x" :icon="['fab', 'git']" />
-        </span>
-      </div>
-      <div class="level-item">
-        <span class="icon is-large">
-          <FaIcon class="fa-2x" :icon="['fab', 'aws']" />
+          <FaIcon
+            :class="[`fa-${skill.size}x`, skill.key === 'node' ? 'pl-3' : '']"
+            :icon="['fab', skill.key]"
+          />
         </span>
       </div>
     </div>
@@ -75,6 +38,19 @@
 
 <script>
 export default {
-  name: 'Footer'
+  name: 'Footer',
+  data: () => ({
+    skills: [
+      { key: 'js-square', size: 3 },
+      { key: 'vuejs', size: 3 },
+      { key: 'react', size: 3 },
+      { key: 'node', size: 3 },
+      { key: 'html5', size: 2 },
+      { key: 'css3-alt', size: 2 },
+      { key: 'sass', size: 2 },
+      { key: 'git', size: 2 },
+      { key: 'aws', size: 2 }
+    ]
+  })
 }
 </script>
