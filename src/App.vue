@@ -1,6 +1,7 @@
 <template>
-  <div>
+  <div id="content">
     <AppHeader />
+    <div id="main" />
   </div>
 </template>
 
