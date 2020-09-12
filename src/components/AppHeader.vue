@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-5 ml-5">
+  <div class="pt-5 pl-5">
     <figure class="image is-128x128">
       <img
         class="is-rounded"
