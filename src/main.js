@@ -5,9 +5,13 @@ import './registerServiceWorker'
 require('@/assets/main.sass')
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import {
+  faFontAwesome,
+  faVuejs,
+  faReact
+} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-library.add(faUserSecret)
+library.add(faFontAwesome, faVuejs, faReact)
 
 const app = createApp(App)
 
