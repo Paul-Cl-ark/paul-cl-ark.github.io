@@ -2,10 +2,13 @@
   <div class="tile is-parent is-vertical">
     <div class="tile is-child">
       <figure class="image is-128x128">
-        <img
-          class="is-rounded"
-          src="https://paul-clark-github-pages.s3.eu-west-2.amazonaws.com/profile-photo.png"
-        />
+        <a href="https://github.com/Paul-Cl-ark" target="_blank">
+          <img
+            class="is-rounded"
+            src="https://paul-clark-github-pages.s3.eu-west-2.amazonaws.com/profile-photo.png"
+            alt="Profile picture"
+          />
+        </a>
       </figure>
     </div>
     <div class="tile is-child">
