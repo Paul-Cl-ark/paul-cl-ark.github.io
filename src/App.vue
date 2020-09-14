@@ -1,16 +1,17 @@
 <template>
-  <div id="main" class="tile is-ancestor">
-    <AppHeader class="pt-5 pl-5 tile is-9" />
-    <div id="body" class="tile is-12" />
-    <Footer id="footer" class="px-5 tile is-12" />
+  <div id="main" class="hero is-fullheight px-5 py-5">
+    <AppHeader class="hero-head" />
+    <Body id="body" class="hero-body" />
+    <Footer id="footer" class="hero-foot" />
   </div>
 </template>
 
 <script>
 import AppHeader from './components/AppHeader'
+import Body from './components/Body'
 import Footer from './components/Footer'
 export default {
   name: 'App',
-  components: { AppHeader, Footer }
+  components: { AppHeader, Body, Footer }
 }
 </script>

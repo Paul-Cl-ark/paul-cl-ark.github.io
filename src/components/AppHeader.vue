@@ -1,6 +1,6 @@
 <template>
-  <div class="tile is-parent is-vertical">
-    <div class="tile is-child">
+  <div>
+    <div>
       <figure class="image is-128x128">
         <a href="https://github.com/Paul-Cl-ark" target="_blank">
           <img
@@ -11,7 +11,7 @@
         </a>
       </figure>
     </div>
-    <div class="tile is-child">
+    <div>
       <a
         class="icon is-medium has-text-white"
         href="https://www.linkedin.com/in/paul-clark-javascript-dev/"
