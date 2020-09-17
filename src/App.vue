@@ -7,11 +7,13 @@
 </template>
 
 <script>
-import AppHeader from './components/AppHeader'
-import Body from './components/Body'
-import Footer from './components/Footer'
+import { defineAsyncComponent as dac } from 'vue'
 export default {
   name: 'App',
-  components: { AppHeader, Body, Footer }
+  components: {
+    AppHeader: dac(() => import('./components/AppHeader')),
+    Body: dac(() => import('./components/Body')),
+    Footer: dac(() => import('./components/Footer'))
+  }
 }
 </script>
