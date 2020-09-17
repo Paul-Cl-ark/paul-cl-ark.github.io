@@ -1,16 +1,14 @@
 <template>
   <div>
-    <div>
-      <figure class="image is-128x128">
-        <a href="https://github.com/Paul-Cl-ark" target="_blank">
-          <img
-            class="is-rounded"
-            src="https://paul-clark-github-pages.s3.eu-west-2.amazonaws.com/profile-photo.png"
-            alt="Profile picture"
-          />
-        </a>
-      </figure>
-    </div>
+    <figure class="image is-128x128 field">
+      <a href="https://github.com/Paul-Cl-ark" target="_blank">
+        <img
+          class="is-rounded"
+          src="https://paul-clark-github-pages.s3.eu-west-2.amazonaws.com/profile-photo.png"
+          alt="Profile picture"
+        />
+      </a>
+    </figure>
     <div>
       <a
         class="icon is-medium has-text-white"
