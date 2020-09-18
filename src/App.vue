@@ -5,12 +5,13 @@
     class="hero is-fullheight px-5 py-5"
   >
     <Header class="hero-head" />
-    <Body id="body" class="hero-body" />
+    <Body id="body" class="hero-body" :aws="aws" />
     <Footer
       id="footer"
       :skills="skills"
       class="hero-foot is-hidden-mobile"
       @react="react"
+      @aws="aws = true"
     />
     <MobileFooter
       id="mobileFooter"
@@ -30,7 +31,7 @@ export default {
     Footer: dac(() => import('./components/Footer')),
     MobileFooter: dac(() => import('./components/MobileFooter'))
   },
-  data: () => ({ isReact: false }),
+  data: () => ({ isReact: false, aws: false }),
   computed: {
     skills: () => [
       { key: 'js-square', size: 3 },

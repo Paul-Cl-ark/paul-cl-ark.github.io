@@ -49,10 +49,11 @@ export default {
       required: true
     }
   },
-  emits: ['react'],
+  emits: ['react', 'aws'],
   methods: {
     handleHover(icon) {
       if (icon === 'react') return this.$emit('react', true)
+      else if (icon === 'aws') this.$emit('aws')
       this.$emit('react', false)
     }
   }
