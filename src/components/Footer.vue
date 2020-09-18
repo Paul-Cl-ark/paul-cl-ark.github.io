@@ -39,18 +39,11 @@
 <script>
 export default {
   name: 'Footer',
-  data: () => ({
-    skills: [
-      { key: 'js-square', size: 3 },
-      { key: 'vuejs', size: 3 },
-      { key: 'react', size: 3 },
-      { key: 'node', size: 3 },
-      { key: 'html5', size: 2 },
-      { key: 'css3-alt', size: 2 },
-      { key: 'sass', size: 2 },
-      { key: 'git', size: 2 },
-      { key: 'aws', size: 2 }
-    ]
-  })
+  props: {
+    skills: {
+      type: Array,
+      required: true
+    }
+  }
 }
 </script>
