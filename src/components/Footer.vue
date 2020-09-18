@@ -2,7 +2,11 @@
   <footer class="level has-text-white">
     <div class="level-left">
       <div v-for="skill in skills" :key="skill.key" class="level-item">
-        <span class="icon is-large">
+        <span
+          class="icon is-large"
+          @mouseover="handleHover(skill.key)"
+          @mouseleave="handleHover"
+        >
           <FaIcon
             :class="[`fa-${skill.size}x`, skill.key === 'node' ? 'pl-3' : '']"
             :icon="['fab', skill.key]"
@@ -43,6 +47,13 @@ export default {
     skills: {
       type: Array,
       required: true
+    }
+  },
+  emits: ['react'],
+  methods: {
+    handleHover(icon) {
+      if (icon === 'react') return this.$emit('react', true)
+      this.$emit('react', false)
     }
   }
 }

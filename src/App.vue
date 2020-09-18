@@ -1,8 +1,17 @@
 <template>
-  <div id="main" class="hero is-fullheight px-5 py-5">
+  <div
+    id="main"
+    :class="{ 'is-react': isReact }"
+    class="hero is-fullheight px-5 py-5"
+  >
     <Header class="hero-head" />
     <Body id="body" class="hero-body" />
-    <Footer id="footer" :skills="skills" class="hero-foot is-hidden-mobile" />
+    <Footer
+      id="footer"
+      :skills="skills"
+      class="hero-foot is-hidden-mobile"
+      @react="react"
+    />
     <MobileFooter
       id="mobileFooter"
       :skills="skills"
@@ -21,6 +30,7 @@ export default {
     Footer: dac(() => import('./components/Footer')),
     MobileFooter: dac(() => import('./components/MobileFooter'))
   },
+  data: () => ({ isReact: false }),
   computed: {
     skills: () => [
       { key: 'js-square', size: 3 },
@@ -33,6 +43,11 @@ export default {
       { key: 'git', size: 2 },
       { key: 'aws', size: 2 }
     ]
+  },
+  methods: {
+    react(boolean) {
+      this.isReact = boolean
+    }
   }
 }
 </script>
