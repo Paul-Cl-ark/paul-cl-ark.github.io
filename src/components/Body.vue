@@ -2,7 +2,7 @@
   <div class="container has-text-white">
     <div class="content">
       <p class="title is-1 is-size-3-mobile has-text-white">
-        <span>Hey, I'm Paul</span>
+        <span>Hey, I'm Paul </span>
         <span>&#x1f44b;</span>
       </p>
       <a
