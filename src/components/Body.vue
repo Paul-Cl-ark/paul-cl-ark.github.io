@@ -11,9 +11,21 @@
         target="_blank"
       >
         <img
-          width="60"
+          width="80"
           src="../assets/aws-cloud-practitioner.png"
           alt="Certified AWS Cloud Practitioner"
+        />
+      </a>
+      <a
+        v-if="aws"
+        href="https://www.youracclaim.com/badges/bbf46054-81be-452e-aa4f-74145c5baeb5/public_url"
+        target="_blank"
+        class="px-4"
+      >
+        <img
+          width="80"
+          src="../assets/aws-developer-associate.png"
+          alt="Certified AWS Developer - Associate"
         />
       </a>
     </div>
@@ -37,6 +49,12 @@ export default {
   transform: scale(1.1);
   transition: all ease 750ms;
 .title:not(:hover)
+    transform: scale(1)
+    transition: all ease 1000ms
+img:hover
+  transform: scale(1.5);
+  transition: all ease 750ms;
+img:not(:hover)
     transform: scale(1)
     transition: all ease 1000ms
 </style>
